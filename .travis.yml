@@ -1,6 +1,9 @@
 language: bash
 install:
 - echo "Done"
+stages:
+- install
+- deploy
 jobs:
   include:
   - stage: deploy
