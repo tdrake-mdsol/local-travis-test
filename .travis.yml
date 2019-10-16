@@ -1,3 +1,17 @@
 language: bash
 install:
 - echo "Done"
+jobs:
+  include:
+  - stage: deploy
+    script: echo "Job deploy task"
+  - stage: install
+    name: "Install job 1"
+    script: echo "Job install task 1"
+  - stage: install
+    name: "Install job 2"
+    script: echo "Job install task 2"
+install:
+- echo "Global install task"
+deploy:
+- echo "Global deploy task"
