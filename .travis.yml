@@ -2,6 +2,7 @@ language: bash
 stages:
 - foo
 - bar
+- ting
 jobs:
   include:
   - stage: foo
