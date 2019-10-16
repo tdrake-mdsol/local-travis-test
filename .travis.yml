@@ -17,3 +17,5 @@ foo:
 - echo "Global foo task"
 bar:
 - echo "Global bar task"
+ting:
+- echo "Global ting task"
