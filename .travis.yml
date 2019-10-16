@@ -1,20 +1,19 @@
 language: bash
-install:
-- echo "Done"
 stages:
-- install
-- deploy
+- foo
+- bar
 jobs:
   include:
-  - stage: deploy
-    script: echo "Job deploy task"
-  - stage: install
-    name: "Install job 1"
-    script: echo "Job install task 1"
-  - stage: install
-    name: "Install job 2"
-    script: echo "Job install task 2"
-install:
-- echo "Global install task"
-deploy:
-- echo "Global deploy task"
+  - stage: foo
+    name: "Foo Job"
+    script: echo "Job foo task"
+  - stage: bar
+    name: "Bar job 1"
+    script: echo "Job bar task 1"
+  - stage: bar
+    name: "Bar job 2"
+    script: echo "Job bar task 2"
+foo:
+- echo "Global foo task"
+bar:
+- echo "Global bar task"
