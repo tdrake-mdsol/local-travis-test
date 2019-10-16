@@ -15,8 +15,8 @@ jobs:
     name: "Bar job 2"
     script: echo "Job bar task 2"
 foo:
-- echo "Global foo task"
+  - echo "Global foo task"
 bar:
-- echo "Global bar task"
+  - echo "Global bar task"
 ting:
-- echo "Global ting task"
+  - echo "Global ting task"
